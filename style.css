@@ -1,0 +1,399 @@
+body {
+    margin: 0;
+    font-family: 'Muli',sans-serif;
+    
+    font-size: 14px;
+    line-height: 18px;
+   
+  }
+  
+  div,figure,
+  a,ul {
+    display: inline-block;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+    color: #6a6a6a;
+    
+   
+    
+  }
+  
+  main {
+    width: 85%;
+    margin:auto
+  }
+
+
+ header{ position: -webkit-sticky;
+  position:sticky;
+  top: 0;
+  z-index:10
+
+
+ }
+
+
+  
+.header-container-1 {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 38px;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid hsl(0, 0%, 91%);
+    padding-left: 15px;
+    padding-right: 15px;
+    width:100%;
+    
+  
+
+  }
+  
+  
+  .header-container-2 {display: flex;
+  
+    justify-content: space-between;
+    height: 63px;
+    align-items: center;
+    background-color: #fff;
+    padding-right:0;
+    padding-left: 30px;
+    background-color: #454545;
+    
+  }
+  
+  .items_1{display: flex;
+            justify-content:space-around;
+          align-items: center;
+          width:160px}
+
+
+  .logo {
+   font-family: Muli, sans-serif;
+   color:hsl(0, 0%, 93%);
+   font-size:23px;
+   letter-spacing:-.4px;
+   
+   
+  }
+
+.fa-search{color:white;
+  font-size:16px;
+  
+}
+
+
+  .cart {
+    font-size: 20px;
+    color: white;
+    
+  }
+  
+
+  .hamburger {
+    cursor: pointer;
+    
+  }
+  
+  
+  /* Hamburger menu created with css*/
+  
+  .hamburger .bar-1 {
+    display: block;
+    width: 20px;
+   
+    height: 2px;
+    background-color: white;
+    margin: 4px;
+    margin-right:0
+    
+    
+   
+  }
+
+/* wrapper placed around .slick-slider so that I can easily center next and prev button vertically
+and keep them centered when images grow or shrink  */
+
+  .slick-wrapper{display:flex;
+    align-items: center;
+    width:100%;
+   
+    
+    
+    
+
+
+   
+  }
+
+
+.slick-slider{display:flex;
+  
+  width:90%;
+  margin:auto;
+ 
+  
+  
+  
+}
+
+
+
+
+/* set width on images because slick.css cannot target img and set image width 
+once we wrap img tags with figure and anchor tags*/
+.slick-slider img {width:100%;
+ 
+
+  
+
+}
+
+
+/* prev and next buttons were not created or styled from slick.css. They were created on index.html and styled on this style
+ sheet.  */
+
+.next,.prev{
+                position:absolute;
+                border:none;
+              border-radius:100%;
+              background: rgba(0,0,0,.5);
+              height:30px;
+              width:30px;
+              color:white;
+              z-index:1;
+              margin:30px;
+              cursor: pointer;
+              margin-top:-30px
+
+             
+              
+             
+              
+            }
+       
+            .next{right:0px}
+               
+
+
+/* position the dots*/
+            .slick-slider ul{position:relative;
+              top:-50px;
+              text-align:center;
+              
+             
+            }
+            
+/* dots are created with slick and then styles modified on this style sheet*/
+
+.slick-slider ul.slick-dots li button:before{background-color:#055a4d;
+                                               height:12px;
+                                               width:12px;
+                                             
+                                               border-radius:100%;
+                                               font-size:0px;
+                                               color:#055a4d;
+                                                           
+                                                          
+                                                            }                                       
+
+ .slick-slider ul.slick-dots li button  {background-color:#02ffd9;
+  border-radius:100%;
+  height:12px;
+                                  width:12px;
+}
+
+ 
+              
+.section-2-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 40px;
+  row-gap: 20px;
+  gap:20px;
+  text-align: center
+}    
+
+.section-2-row.margin-top{ margin-top:-40px;}
+
+.section-2-row img {width:100%;
+  border:1px solid white;
+  
+ 
+ 
+ }
+  
+
+
+
+ article a:hover{color:#32d5bd;}
+
+ article:hover img{border: 1px solid rgba(0,0,0,.3);}
+
+                              
+article {height:100%;
+ 
+  
+     text-align:left;
+}
+
+
+
+.title-wrapper{
+text-align: center;
+
+margin-bottom:25px;
+
+
+
+
+}
+
+.title-wrapper .title {font-size:20px;
+  color:#6a6a6a;
+width:100%}
+
+
+.title-wrapper a {color: #32d5bd;
+  font-size: 16px;
+  font-weight: 700;
+        margin-top:18px;
+      width:100%}
+
+     
+      .container-head{
+                   
+                   width: 90%;
+                   padding-left:5%;
+                   padding-right:5%;
+                   text-align: center;
+              background-color: #454545;
+              color:#f4f7f6;
+                  }
+
+
+      .container-head h3 {
+        font-size:24px;
+        line-height:24px;
+       font-weight:400;
+       margin:0;
+       margin-top:30px;
+       margin-bottom:10px
+     }
+
+.container-head p {font-size:12px;
+line-height:20px;
+
+
+
+
+
+
+}
+
+.container-head .privacy{color:#32d5bd; }
+
+
+
+
+            .container {
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: auto;
+              width: 90%;
+              padding-left:5%;
+              padding-right:5%;
+              margin: auto;
+              padding-bottom: 40px;
+              row-gap: 20px;
+              gap:20px;
+              text-align: center;
+              background-color: #454545;
+              color:#f4f7f6;
+              
+            }   
+            
+          
+
+          
+
+
+
+            label {color:#f4f7f6;
+              font-size:15px;
+              margin-top:15px
+            }
+
+            input{border:none;
+              border-bottom:1px solid white;
+            text-align:center;
+           
+            color:white;
+            font-size:16px;
+             outline:none;
+             background-color: #454545;
+             padding-bottom:10px
+      }
+
+
+      .container button {    border: 1px solid #32d5bd;
+                             color: #32d5bd;
+                           padding:8px;
+                             background-color: #454545;
+                            font-size:22px;
+                          font-weight:400;
+                        margin-top:10px}
+
+
+                          .container button:hover {background: #32d5bd;
+                          color:white}
+
+
+    .company-info{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      width: 100%;
+      
+      margin: auto;
+      margin-top:10px;
+      padding-bottom: 40px;
+      row-gap: 20px;
+      gap:20px;
+      text-align: center;
+      color: #6a6a6a;
+      line-height:30px;
+      
+    }   
+
+    .company-info ul {list-style-type:none}
+
+    .company-info .company-titles{font-weight:bold;
+    margin-bottom:10px;
+    
+  }
+
+  .company-info  .support-wellgosh{color:#32d5bd;}
+
+
+  .company-info ul li a:hover{color:#32d5bd;}
+
+
+ .footer-bottom { display:flex;
+   
+  background-color: #454545;
+  color:#f4f7f6;
+  
+text-align:center;
+  padding-left:5%;
+  padding-right:5%;
+  padding-top:17px;
+  padding-bottom:38px
+  
+}
+
