@@ -2,9 +2,9 @@
 
 Clone im currently building of the home page from a website called (Wellgosh) using HTML5, CSS3 and JavaScript.
 
-Slick carousel slider has been added and customised. Mobile version starting from 320px is nearly complete apart from a few transition affects needing added.
-I will then style the layout from 320px up to desktop. And last of all I will create the navigation modal and hamburger modal (javascript) 
+Slick carousel slider has been added and customised. Layout/styling complete and fully responsive. W3C validation complete on HTML and CSS (no errors or warnngs)
+Next I will finish navigation modal on hover, create a drop down modal for search functionality and hamburger modal (javascript) Then set the images up so that they lazy load with slick slider. I also need to double check HTML semantics and add images in the format of WEBP
 
-I usually dont format the code until im finished working with it, as I find it easier to scan through.
+
 You can checkout the original wellgosh website at https://wellgosh.com/ if you would like to compare it with my work to date. 
 
