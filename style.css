@@ -18,9 +18,19 @@ body {
    
     
   }
+
+/******* Elements hidden that are less than media queries 996px *********/
+
+  .union-jack, .fa-user, .nav-titles, #a1{display:none}
+ 
+ 
+
+
+
+
   
   main {
-    width: 85%;
+    width: 95%;
     margin:auto
   }
 
@@ -63,6 +73,10 @@ body {
     background-color: #454545;
     
   }
+
+  
+
+
   
   .items_1{display: flex;
             justify-content:space-around;
@@ -78,6 +92,8 @@ body {
    
    
   }
+
+
 
 .fa-search{color:white;
   font-size:16px;
@@ -131,7 +147,7 @@ and keep them centered when images grow or shrink  */
 
 .slick-slider{display:flex;
   
-  width:90%;
+  width:95%;
   margin:auto;
  
   
@@ -219,7 +235,16 @@ once we wrap img tags with figure and anchor tags*/
   text-align: center
 }    
 
-.section-2-row.margin-top{ margin-top:-40px;}
+span{color: #6a6a6a;
+  font-weight: bold;
+font-size:15px}
+
+h2{color: #6a6a6a;
+  font-weight: lighter;
+font-size:15px}
+
+
+.section-2-row.grid-1{ margin-top:-40px;}
 
 .section-2-row img {width:100%;
   border:1px solid white;
@@ -231,9 +256,12 @@ once we wrap img tags with figure and anchor tags*/
 
 
 
- article a:hover{color:#32d5bd;}
+ article a:hover h2{color:#32d5bd;
+  -webkit-transiton:.5s;
+  transition:.5s; }
 
- article:hover img{border: 1px solid rgba(0,0,0,.3);}
+ article:hover img{border: 1px solid rgba(0,0,0,.3);
+  transition:border .5s;  }
 
                               
 article {height:100%;
@@ -245,6 +273,7 @@ article {height:100%;
 
 
 .title-wrapper{
+  width:100%;
 text-align: center;
 
 margin-bottom:25px;
@@ -254,7 +283,7 @@ margin-bottom:25px;
 
 }
 
-.title-wrapper .title {font-size:20px;
+.title-wrapper .title {font-weight:lighter;
   color:#6a6a6a;
 width:100%}
 
@@ -283,7 +312,7 @@ width:100%}
        font-weight:400;
        margin:0;
        margin-top:30px;
-       margin-bottom:10px
+       margin-bottom:30px
      }
 
 .container-head p {font-size:12px;
@@ -317,22 +346,29 @@ line-height:20px;
               color:#f4f7f6;
               
             }   
-            
-          
 
+            .container div {margin-top:20px;
+                            width:100%}
+
+            
+            .container div label,input{display:block;
+                                     text-align:center;
+                                   
+                                     width:100%;
+                                    margin:auto}
           
 
 
 
             label {color:#f4f7f6;
               font-size:15px;
-              margin-top:15px
+             
             }
 
             input{border:none;
               border-bottom:1px solid white;
             text-align:center;
-           
+           margin-top:30px;
             color:white;
             font-size:16px;
              outline:none;
@@ -343,6 +379,7 @@ line-height:20px;
 
       .container button {    border: 1px solid #32d5bd;
                              color: #32d5bd;
+                           
                            padding:8px;
                              background-color: #454545;
                             font-size:22px;
@@ -350,7 +387,9 @@ line-height:20px;
                         margin-top:10px}
 
 
-                          .container button:hover {background: #32d5bd;
+                          .container button:hover {background-color: #32d5bd;
+                            -webkit-transiton:.5s;
+                            transition:.5s; 
                           color:white}
 
 
@@ -381,19 +420,325 @@ line-height:20px;
   .company-info  .support-wellgosh{color:#32d5bd;}
 
 
-  .company-info ul li a:hover{color:#32d5bd;}
+  .company-info ul li a:hover{color:#32d5bd;
+                               transition:.5s}
 
 
  .footer-bottom { display:flex;
-   
+   height:100px;
   background-color: #454545;
   color:#f4f7f6;
   
+justify-content:center;
+align-items:center;
 text-align:center;
   padding-left:5%;
   padding-right:5%;
-  padding-top:17px;
-  padding-bottom:38px
+ 
   
 }
+
+@media screen and (min-width:577px) {
+  .footer-bottom { 
+    height:70px;
+ 
+   
+
+  
+   
+ }
+
+
+}
+
+
+
+@media screen and (min-width:577px) {
+
+.company-info{
+ 
+  grid-template-columns: 1fr 1fr;
+  
+  
+}   
+
+}
+
+
+
+@media screen and (min-width:766px) {
+
+  .slick-slider ul.slick-dots li button:before{
+    height:16px;
+    width:16px;
+  
+   
+               
+                 }                                       
+  
+  .slick-slider ul.slick-dots li button  {
+  
+  height:16px;
+  width:16px;
+  }
+
+
+
+  .section-2-row.grid-1 {
+   
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+  } 
+
+ 
+
+
+  .title-wrapper .title {font-size:24px;
+   
+  }
+
+  
+  .section-2-row {
+   
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  } 
+
+  input {width:50%;
+            margin:auto}
+  .container button{width:30%;
+    margin:auto }
+
+    .company-info{
+ margin-top:30px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      
+      
+      
+    }   
+
+   
+
+
+  
+}
+
+
+
+
+@media screen and (min-width:996px) {
+
+
+
+
+  
+  .hamburger {
+    display:none
+    
+  }
+
+  .union-jack, .fa-user, .nav-titles{
+    display:inline;
+
+
+  }
+
+ 
+
+
+
+  .header-container-2 {
+    height:80px;
+    
+    
+
+
+
+  }
+
+  .header-container-2 .nav-title-container{
+
+    display:flex;
+    
+
+  }
+
+
+  .header-container-2 .nav-titles {
+
+    color:white;
+    
+
+    margin-right:8px;
+    
+
+  }
+
+
+
+
+/*************  start coding from here. (22/2/2022) #a1 was moved and placed inside nav-title-container so that on hover of each element the modal will show for each.
+*/
+
+
+.nav-titles:hover ~ #a1 {display:block}
+
+
+
+  .nav-titles::after {
+
+    content: '';
+    display:block;
+    background-color:#32d5bd;
+  
+    height:1px;
+    
+ 
+ 
+   }
+
+
+   .nav-titles::after{
+    transform:scale(0, 1);
+    transform-origin:0% 100%;
+   
+     transition:transform 0.3s ease
+    
+
+   }
+
+ 
+
+  .nav-titles:hover::after {
+    
+    transform:scale(1, 1);
+    
+
+
+  }
+
+
+
+
+
+
+
+#a1 {position:absolute;
+  left:0;
+  top:80px;
+  width:100%;
+height:100vh;
+background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+
+  .nav-modal {display:grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 40px;
+    row-gap: 20px;
+    gap:20px;
+    text-align: center;
+    background-color:white;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+  }   
+
+  .nav-modal ul{width:100%;}
+
+
+
+
+  .header-container-2 .logo{
+    font-size:40px;
+   
+  }
+
+  .union-jack{
+    width:26px
+ 
+ 
+  }
+ 
+  .fa-user{color:white;
+ font-size:18px}
+ 
+
+
+
+  .section-2-row {
+   
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    
+  } 
+
+
+  .container {
+   
+  display:flex;
+  justify-content:space-evenly;
+  
+  text-align:left;
+  
+  
+    
+  } 
+
+  .container div label {
+   text-align:left
+
+
+  }
+
+
+
+  input {width:100%;
+    text-align:left;
+    margin:0
+  }
+
+
+
+.container button{
+ 
+  margin:0;
+}
+
+
+.container-head p {font-size:15px;
+  
+  
+  
+  
+  
+  
+  
+  }
+
+
+
+
+ }
+
+ 
+ @media screen and (min-width:1010px) {
+
+  .header-container-2 {
+    height:80px;
+    padding:0;
+    padding-left:3%;
+    padding-right:3%
+    
+  
+  
+  
+  }
+  }
+  
+
+
+
 
