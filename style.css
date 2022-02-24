@@ -94,9 +94,47 @@ body {
   }
 
 
+  .items_1 .dropdown-search{
+    
+    position:absolute;
+    top:60px;
+    left:0px;
+    width:100%;
+    background-color: rgba(69,69,69,.9);
+    padding-bottom:20px;
+    padding-top:20px;
+   display:none;
+  
+  
+
+
+
+}
+
+
+
+
+.site-search {
+ 
+ width:90%;
+ margin:auto;
+ text-align:left;
+ background-color: rgba(87, 87, 87, 0.9);
+  border-bottom:1px solid #32d5bd;
+  color:white;
+
+
+}
+::placeholder{
+   font-size:14px;
+   color:white}
+
+
+
 
 .fa-search{color:white;
   font-size:16px;
+  cursor:pointer
   
 }
 
@@ -468,6 +506,18 @@ text-align:center;
 
 @media screen and (min-width:766px) {
 
+
+  .site-search {
+ 
+    width:50%;
+   
+    
+    
+   
+   
+   }
+
+
   .slick-slider ul.slick-dots li button:before{
     height:16px;
     width:16px;
@@ -528,7 +578,17 @@ text-align:center;
 
 @media screen and (min-width:996px) {
 
+  .items_1 .dropdown-search{
 
+    top:80px;
+ 
+   
+  
+  
+
+
+
+}
 
 
   
@@ -546,30 +606,50 @@ text-align:center;
  
 
 
-
+  nav {display:flex;
+    justify-content: center;
+    
+    width:100%;
+  
+  }
+  
   .header-container-2 {
     height:80px;
+    padding:0;
+    padding-left:3%;
+    padding-right:3%
     
-    
-
-
-
+  
+  
+  
   }
+
+
+
 
   .header-container-2 .nav-title-container{
 
     display:flex;
+
+    
+  
     
 
   }
 
 
-  .header-container-2 .nav-titles {
+  .nav-title-container .nav-titles {
 
     color:white;
     
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-right:5px;
+    padding-left:5px;
 
-    margin-right:8px;
+
+  
+
     
 
   }
@@ -629,6 +709,7 @@ text-align:center;
   width:100%;
 height:100vh;
 background-color: rgba(0, 0, 0, 0.6);
+z-index:1
 
 }
 
@@ -647,7 +728,8 @@ background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
   }   
 
-  .nav-modal ul{width:100%;}
+  .nav-modal ul{width:100%;
+  list-style-type:none;}
 
 
 
@@ -724,20 +806,12 @@ background-color: rgba(0, 0, 0, 0.6);
  }
 
  
- @media screen and (min-width:1010px) {
+ 
 
-  .header-container-2 {
-    height:80px;
-    padding:0;
-    padding-left:3%;
-    padding-right:3%
-    
-  
-  
-  
-  }
-  }
-  
+
+
+
+
 
 
 
