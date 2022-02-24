@@ -177,6 +177,19 @@
             <div class='items_1'>
 
                 <i class="fas fa-search"></i>
+
+                <div class="dropdown-search">
+
+                    <input type="search" class="site-search" placeholder="SEARCH">
+
+
+
+                </div>
+
+
+
+
+
                 <img class='union-jack' src="images/gb.jpg" alt="image">
                 <a class='cart' href="#"><i class="fas fa-shopping-bag"></i></a>
 
@@ -617,15 +630,21 @@
         });
 
 
+        $(function () { // Dropdown toggle
+            $('.fa-search').click(function () {
+                $(this).next('.dropdown-search').slideToggle();
+            });
+
+
+        });
+
+
+
+
+
     </script>
 
 
-
-
-
-</body>
-
-</html>
 
 
 
