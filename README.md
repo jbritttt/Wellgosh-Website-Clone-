@@ -1,4 +1,4 @@
-# Wellgosh-Website-Clone !!! UNDER CONSTRUCTION !!!
+# Wellgosh-Website-Clone
 
 Clone im currently building of the home page from a website called (Wellgosh) using HTML5, CSS3 and JavaScript.
 
