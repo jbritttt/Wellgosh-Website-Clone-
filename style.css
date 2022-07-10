@@ -135,6 +135,7 @@ and keep them centered when images grow or shrink  */
   display: flex;
   align-items: center;
   width: 100%;
+  
 }
 
 .slick-slider {
@@ -148,6 +149,7 @@ and keep them centered when images grow or shrink  */
 once we wrap img tags with figure and anchor tags*/
 .slick-slider img {
   width: 100%;
+  cursor:grab;
 }
 
 /* prev and next buttons were not created or styled from slick.css. They were created on index.html and styled on this style
